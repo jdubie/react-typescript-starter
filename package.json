@@ -1,0 +1,62 @@
+{
+  "name": "react-typescript-starter",
+  "version": "0.0.1",
+  "description": "A starter project for react apps in typescript.",
+  "scripts": {
+    "start": "node client_dev_server.js",
+    "build": "webpack -p --config webpack.prod.config.js",
+    "test": "PHANTOMJS_BIN=./node_modules/.bin/phantomjs ./node_modules/karma/bin/karma start karma.config.js",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "clean": "rm prod/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdubie/react-typescript-starter.git"
+  },
+  "keywords": [
+    "skeleton",
+    "template",
+    "react",
+    "typescript",
+    "jsx",
+    "quickstart"
+  ],
+  "author": "Jack Dubie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdubie/react-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/jdubie/react-typescript-starter",
+  "devDependencies": {
+    "autoprefixer-loader": "^1.2.0",
+    "coveralls": "^2.11.2",
+    "css-loader": "^0.12.1",
+    "express": "^4.12.2",
+    "http-proxy": "^1.11.1",
+    "istanbul": "^0.3.7",
+    "istanbul-instrumenter-loader": "^0.1.2",
+    "karma": "^0.12.31",
+    "karma-coverage": "^0.2.7",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sauce-launcher": "^0.2.10",
+    "karma-sinon-chai": "^0.3.0",
+    "karma-webpack": "^1.5.0",
+    "node-sass": "^3.1.1",
+    "phantomjs": "^1.9.16",
+    "react-hot-loader": "^1.2.3",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "ts-jsx-loader": "^0.2.0",
+    "ts-loader": "^0.4.3",
+    "tslint": "^2.2.0-beta",
+    "tslint-loader": "^0.9.0",
+    "typescript": "^1.5.0-beta",
+    "webpack": "^1.7.2",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "react": "^0.13.3",
+    "source-map-support": "^0.3.1"
+  }
+}

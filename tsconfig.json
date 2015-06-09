@@ -1,0 +1,33 @@
+{
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "compileOnSave": false,
+    "filesGlob": [
+        "./src/**/*.ts",
+        "./types/**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./src/client.test.ts",
+        "./src/client.ts",
+        "./src/page.test.ts",
+        "./src/page.ts",
+        "./src/server.ts",
+        "./src/test_polyfill.ts",
+        "./types/express.d.ts",
+        "./types/mocha.d.ts",
+        "./types/node.d.ts",
+        "./types/react-addons.d.ts",
+        "./types/react-jsx.d.ts",
+        "./types/react.d.ts"
+    ]
+}
